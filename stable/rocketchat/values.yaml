@@ -2,7 +2,7 @@
 ## ref: https://hub.docker.com/r/rocketchat/rocket.chat/tags
 ##
 image:
-  repository: rocketchat/rocket.chat
+  repository: harbor.io/library/rocketchat/rocket.chat
   tag: 0.74.2
   pullPolicy: IfNotPresent
 
@@ -68,7 +68,7 @@ mongodb:
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
 persistence:
-  enabled: true
+  enabled: false
   ## rocketchat data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
